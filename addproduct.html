@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="addproduct.css">
+
+	<title>ASANA</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+	  <div id="home">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">ASANA</span>
+		</a>
+	  </div>
+		<ul class="side-menu top">
+			<li>
+				<a href="dashboard.php">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<li class="active">
+					<a href="inventory.html">
+						<i class='bx bxs-shopping-bag-alt' ></i>
+						<span class="text">Inventory</span>
+					</a>
+				</li>
+			<li>
+				<a href="outlet.html">
+					<i class='bx bxs-user-plus'></i>
+					<span class="text">Outlet</span>
+				</a>
+			</li>
+			<li>
+				<a href="report.php">
+					<i class='bx bxs-report' ></i>
+					<span class="text">Report</span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="Logout.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<i class='bx bxs-user-circle'></i>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- dashbord -->
+	
+		<main>
+            <div class="container">
+                <form id="contactForm" action="addp.php" method="post">
+                    <h2>Add Products</h2>
+        
+                    <fieldset>
+                        <legend>Add Products Details </legend>
+
+                        <label for="itemname">Catogory :</label>
+                        <select name="myDropdown" id="myDropdown" name="ctg">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						  </select>
+
+                        <label for="itemname">Item Name :</label>
+                        <input type="itemname" id="itemname" name="itemname" required>
+
+                        <label for="itemname">Product Name :</label>
+                        <input type="itemname" id="itemname" name="itemname" required>
+
+                        <label for="sku">SKU:</label>
+                        <input type="sku" id="sku" name="sku" required>
+        
+                        <label for="price">Price :</label>
+                        <input type="price" id="price" name="price" required>
+        
+                        <label for="weight">Weight :</label>
+                        <input type="weight" id="weight" name="weight" required>
+
+                        <label for="quantity">Quantity :</label>
+                        <input type="quantity" id="quantity" name="quantity" required>
+
+                        <label for="discount">Discount :</label>
+                        <input type="discount" id="discount" name="discount" required>
+        
+                        
+                    </fieldset>
+        
+                    <button type="submit">Insert</button>
+                </form>
+            </div>
+		</main>
+
+			
+	</section>
+		<!-- MAIN -->
+	
+	<!-- CONTENT -->
+	
+
+	<script src="addproduct.js"></script>
+</body>
+</html>
